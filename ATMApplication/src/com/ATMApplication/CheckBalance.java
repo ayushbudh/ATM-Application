@@ -1,7 +1,6 @@
 package com.ATMApplication;
 
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import java.awt.Font;
@@ -11,21 +10,14 @@ import java.awt.event.ActionEvent;
 import java.awt.Color;
 import javax.swing.ImageIcon;
 
-public class CheckBalance extends ServicesScreen {
-
-	
-
+public class CheckBalance extends ServicesScreen 
+{
 	static double getBalance(double bal)
 	{
 		balance=bal;
 		return bal;
 	}
-	
-	
-	
 	private JFrame frame;
-	
-
 	/**
 	 * Launch the application.
 	 */
@@ -41,18 +33,13 @@ public class CheckBalance extends ServicesScreen {
 			}
 		});
 	}
-
 	/**
 	 * Create the application.
 	 */
-	
 	public CheckBalance() {
 		initialize(balance);
 	
 	}
-	
-	
-
 	/**
 	 * Initialize the contents of the frame.
 	 */
@@ -121,11 +108,9 @@ public class CheckBalance extends ServicesScreen {
 		receiptButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-				
 				RecieptScreen.main(null);
 				RecieptScreen.getBalance(bal);
 				frame.dispose();
-				
 			}
 		});
 		receiptButton.setBounds(232, 467, 156, 35);
@@ -156,5 +141,4 @@ public class CheckBalance extends ServicesScreen {
 		lblNewLabel_2.setBounds(42, 71, 51, 50);
 		frame.getContentPane().add(lblNewLabel_2);
 	}
-
 }
