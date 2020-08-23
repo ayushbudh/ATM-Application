@@ -1,9 +1,7 @@
 package com.ATMApplication;
 
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
-
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -17,11 +15,10 @@ import java.awt.SystemColor;
 import javax.swing.UIManager;
 import javax.swing.ImageIcon;
 
-public class PinScreen {
-
+public class PinScreen 
+{
 	private JFrame frame;
 	private JPasswordField passwordField;
-
 	/**
 	 * Launch the application.
 	 */
@@ -60,7 +57,6 @@ public class PinScreen {
 		passwordField.setBounds(375, 296, 46, 35);
 		frame.getContentPane().add(passwordField);
 		
-		
 		JButton ButtonOne = new JButton("1");
 		ButtonOne.setBackground(UIManager.getColor("Button.select"));
 		ButtonOne.addActionListener(new ActionListener() {
@@ -71,7 +67,6 @@ public class PinScreen {
 				{
 					passwordField.setText(previous+"1");
 				}
-				
 				else
 				{
 					passwordField.setText("1");
@@ -93,7 +88,6 @@ public class PinScreen {
 				{
 					passwordField.setText(previous+"2");
 				}
-				
 				else
 				{
 					passwordField.setText("2");
@@ -114,7 +108,6 @@ public class PinScreen {
 				{
 					passwordField.setText(previous+"3");
 				}
-				
 				else
 				{
 					passwordField.setText("3");
@@ -135,7 +128,6 @@ public class PinScreen {
 				{
 					passwordField.setText(previous+"4");
 				}
-				
 				else
 				{
 					passwordField.setText("4");
@@ -156,7 +148,6 @@ public class PinScreen {
 				{
 					passwordField.setText(previous+"5");
 				}
-				
 				else
 				{
 					passwordField.setText("5");
@@ -177,7 +168,6 @@ public class PinScreen {
 				{
 					passwordField.setText(previous+"6");
 				}
-				
 				else
 				{
 					passwordField.setText("6");
@@ -198,7 +188,6 @@ public class PinScreen {
 				{
 					passwordField.setText(previous+"7");
 				}
-				
 				else
 				{
 					passwordField.setText("7");
@@ -219,7 +208,6 @@ public class PinScreen {
 				{
 					passwordField.setText(previous+"8");
 				}
-				
 				else
 				{
 					passwordField.setText("8");
@@ -241,7 +229,6 @@ public class PinScreen {
 				{
 					passwordField.setText(previous+"9");
 				}
-				
 				else
 				{
 					passwordField.setText("9");
@@ -250,8 +237,6 @@ public class PinScreen {
 		});
 		ButtonNine.setBounds(422, 604, 46, 45);
 		frame.getContentPane().add(ButtonNine);
-		
-		
 		
 		JLabel PinLabel = new JLabel("ENTER PIN");
 		PinLabel.setFont(new Font("Lucida Grande", Font.PLAIN, 22));
@@ -297,7 +282,6 @@ public class PinScreen {
 				{
 					passwordField.setText(previous+"0");
 				}
-				
 				else
 				{
 					passwordField.setText("0");
@@ -316,18 +300,14 @@ public class PinScreen {
 			public void actionPerformed(ActionEvent e) 
 			{
 				if(passwordField.getText().equals("1234"))
-				{
-					
-					
+				{	
 					 frame.dispose();
 					 ServicesScreen.main(null);
 				}
 				else
 				{
-		
 					JOptionPane.showMessageDialog(null, "Incorrect Pin. Please re-enter pin. "," Access Denied!",JOptionPane.ERROR_MESSAGE);
-					passwordField.setText(null);
-					
+					passwordField.setText(null);	
 				}
 			}
 		});
