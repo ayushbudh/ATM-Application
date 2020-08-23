@@ -3,7 +3,6 @@ package com.ATMApplication;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -14,13 +13,10 @@ import java.awt.Font;
 import java.awt.Color;
 import javax.swing.ImageIcon;
 
-public class Deposit extends CheckBalance{
-
-	
+public class Deposit extends CheckBalance
+{	
 	private JFrame frame;
 	private JTextField amountobeDeposited;
-
-	
 	/**
 	 * Launch the application.
 	 */
@@ -36,7 +32,6 @@ public class Deposit extends CheckBalance{
 			}
 		});
 	}
-
 	/**
 	 * Create the application.
 	 */
@@ -55,8 +50,6 @@ public class Deposit extends CheckBalance{
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
-		
-		
 		
 		amountobeDeposited = new JTextField();
 		amountobeDeposited.setColumns(10);
@@ -94,14 +87,12 @@ public class Deposit extends CheckBalance{
 				{
 					amountobeDeposited.setText(previous+"1");
 				}
-				
 				else
 				{
 					amountobeDeposited.setText("1");
 				}
 			}
 		});
-		
 				JButton button4 = new JButton("4");
 				button4.setFont(new Font("Dialog", Font.BOLD, 21));
 				button4.addActionListener(new ActionListener() {
@@ -135,7 +126,6 @@ public class Deposit extends CheckBalance{
 				{
 					amountobeDeposited.setText(previous+"2");
 				}
-				
 				else
 				{
 					amountobeDeposited.setText("2");
@@ -177,7 +167,6 @@ public class Deposit extends CheckBalance{
 				{
 					amountobeDeposited.setText(previous+"8");
 				}
-				
 				else
 				{
 					amountobeDeposited.setText("8");
@@ -197,7 +186,6 @@ public class Deposit extends CheckBalance{
 				{
 					amountobeDeposited.setText(previous+"3");
 				}
-				
 				else
 				{
 					amountobeDeposited.setText("3");
@@ -217,7 +205,6 @@ public class Deposit extends CheckBalance{
 				{
 					amountobeDeposited.setText(previous+"6");
 				}
-				
 				else
 				{
 					amountobeDeposited.setText("6");
@@ -257,7 +244,6 @@ public class Deposit extends CheckBalance{
 				{
 					amountobeDeposited.setText(previous+"0");
 				}
-				
 				else
 				{
 					amountobeDeposited.setText("0");
@@ -305,9 +291,7 @@ public class Deposit extends CheckBalance{
 				frame.getContentPane().remove(avBalanceLabel2);
 				String amount = amountobeDeposited.getText();
 				double amo = Double.valueOf(amount);
-				
 				balance = amo + balance;
-				
 				String newBal = String.valueOf(balance);				
 				avBalanceLabel2.setText(newBal);
 				
@@ -336,7 +320,7 @@ public class Deposit extends CheckBalance{
 				}
 				else
 				{
-					amountobeDeposited.setText(	afterOp.substring(0, oneStepback-1));
+					amountobeDeposited.setText(afterOp.substring(0, oneStepback-1));
 				}
 				
 				
