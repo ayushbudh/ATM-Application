@@ -1,7 +1,6 @@
 package com.ATMApplication;
 
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JEditorPane;
@@ -21,9 +20,7 @@ import javax.swing.ImageIcon;
 
 public class RecieptScreen extends CheckBalance {
 
-	
 	private JFrame frame;
-
 	/**
 	 * Launch the application.
 	 */
@@ -134,10 +131,10 @@ public class RecieptScreen extends CheckBalance {
 		
 	
 		DateFormat df1 = new SimpleDateFormat("HH:mm:ss ");
-	    Date dateobj1 = new Date();
+	    	Date dateobj1 = new Date();
 	    
-	    DateFormat df = new SimpleDateFormat("MM/dd/yy ");
-	    Date dateobj = new Date();		
+	   	DateFormat df = new SimpleDateFormat("MM/dd/yy ");
+	    	Date dateobj = new Date();		
 		
 		JLabel DateLabel = new JLabel(df.format(dateobj));
 		DateLabel.setFont(new Font("Lucida Grande", Font.BOLD, 15));
