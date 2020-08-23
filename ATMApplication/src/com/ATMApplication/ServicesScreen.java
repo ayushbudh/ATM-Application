@@ -1,7 +1,6 @@
 package com.ATMApplication;
 
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import java.awt.Font;
@@ -16,7 +15,6 @@ public class ServicesScreen {
 
 	private JFrame frame;
 	static double balance = 0.0;
-
 	/**
 	 * Launch the application.
 	 */
@@ -45,7 +43,6 @@ public class ServicesScreen {
 	 */
 	private void initialize() 
 	{
-		
 		frame = new JFrame();
 		frame.getContentPane().setForeground(Color.YELLOW);
 		frame.setForeground(Color.YELLOW);
@@ -174,7 +171,5 @@ public class ServicesScreen {
 		lblNewLabel.setIcon(new ImageIcon(getClass().getResource("/resources/icons8-info-50.png")));
 		lblNewLabel.setBounds(63, 150, 50, 50);
 		frame.getContentPane().add(lblNewLabel);
-		
-		String balinacc = String.valueOf(balance);
 	}
 }
