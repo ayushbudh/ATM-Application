@@ -4,7 +4,6 @@ import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -14,12 +13,10 @@ import javax.swing.SwingConstants;
 import java.awt.Color;
 import javax.swing.ImageIcon;
 
-public class WithDraw extends CheckBalance{
-
+public class WithDraw extends CheckBalance
+{
 	private JFrame frame;
 	private JTextField amountobeWithdrawn;
-
-	
 	/**
 	 * Launch the application.
 	 */
@@ -101,25 +98,24 @@ public class WithDraw extends CheckBalance{
 			}
 		});
 		
-				JButton button4 = new JButton("4");
-				button4.setFont(new Font("Dialog", Font.BOLD, 22));
-				button4.addActionListener(new ActionListener() {
-					public void actionPerformed(ActionEvent e)
-					{
-						String previous = amountobeWithdrawn.getText();
-						if(previous.length()>=1)
-						{
-							amountobeWithdrawn.setText(previous+"4");
-						}
-						
-						else
-						{
-							amountobeWithdrawn.setText("4");
-						}
-					}
-				});
-				button4.setBounds(303, 519, 46, 45);
-				frame.getContentPane().add(button4);
+		JButton button4 = new JButton("4");
+		button4.setFont(new Font("Dialog", Font.BOLD, 22));
+		button4.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e)
+		{
+			String previous = amountobeWithdrawn.getText();
+			if(previous.length()>=1)
+			{
+				amountobeWithdrawn.setText(previous+"4");
+			}
+			else
+			{
+				amountobeWithdrawn.setText("4");
+			}
+			}
+		});
+		button4.setBounds(303, 519, 46, 45);
+		frame.getContentPane().add(button4);
 		button1.setBounds(303, 475, 46, 45);
 		frame.getContentPane().add(button1);
 		
@@ -129,18 +125,14 @@ public class WithDraw extends CheckBalance{
 			public void actionPerformed(ActionEvent e)
 			{
 				String previous = amountobeWithdrawn.getText();
-				
 				if(previous.length()>=1)
 				{
 					amountobeWithdrawn.setText(previous+"2");
 				}
-				
 				else
 				{
 					amountobeWithdrawn.setText("2");
 				}
-				
-				
 			}
 		});
 		button2.setBounds(348, 475, 46, 45);
@@ -156,7 +148,6 @@ public class WithDraw extends CheckBalance{
 				{
 					amountobeWithdrawn.setText(previous+"5");
 				}
-				
 				else
 				{
 					amountobeWithdrawn.setText("5");
@@ -176,7 +167,6 @@ public class WithDraw extends CheckBalance{
 				{
 					amountobeWithdrawn.setText(previous+"8");
 				}
-				
 				else
 				{
 					amountobeWithdrawn.setText("8");
@@ -196,7 +186,6 @@ public class WithDraw extends CheckBalance{
 				{
 					amountobeWithdrawn.setText(previous+"3");
 				}
-				
 				else
 				{
 					amountobeWithdrawn.setText("3");
@@ -216,7 +205,6 @@ public class WithDraw extends CheckBalance{
 				{
 					amountobeWithdrawn.setText(previous+"6");
 				}
-				
 				else
 				{
 					amountobeWithdrawn.setText("6");
@@ -236,7 +224,6 @@ public class WithDraw extends CheckBalance{
 				{
 					amountobeWithdrawn.setText(previous+"9");
 				}
-				
 				else
 				{
 					amountobeWithdrawn.setText("9");
@@ -256,7 +243,6 @@ public class WithDraw extends CheckBalance{
 				{
 					amountobeWithdrawn.setText(previous+"0");
 				}
-				
 				else
 				{
 					amountobeWithdrawn.setText("0");
@@ -316,8 +302,7 @@ public class WithDraw extends CheckBalance{
 					frame.revalidate();								
 					frame.repaint();
 					
-				}
-								
+				}					
 			}
 		});
 		enterButton.setBounds(393, 604, 46, 45);
@@ -341,8 +326,6 @@ public class WithDraw extends CheckBalance{
 				{
 					amountobeWithdrawn.setText(	afterOp.substring(0, oneStepback-1));
 				}
-				
-				
 			}
 		});
 		backSpace.setBounds(303, 604, 46, 45);
@@ -355,7 +338,6 @@ public class WithDraw extends CheckBalance{
 				frame.dispose();
 				RecieptScreen.main(null);
 				RecieptScreen.getBalance(balance);
-				
 			}
 		});
 		receiptButton.setBounds(392, 703, 156, 35);
