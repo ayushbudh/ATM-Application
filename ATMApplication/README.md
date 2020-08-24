@@ -1,6 +1,7 @@
  Built an Automated Teller Machine application using JFrame and Swing in java which can: 
 
  1.Allow a user to select from the service screen to make a  choice between the available services.
+ 
  2.Check the remaining balance in the account 
  3.Withdraw amount if the withdrawal amount is less
    than the available balance in the account.
