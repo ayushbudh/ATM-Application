@@ -13,10 +13,13 @@ import java.awt.Font;
 import java.awt.Color;
 import javax.swing.ImageIcon;
 
-public class Deposit extends CheckBalance
-{	
+public class Deposit extends CheckBalance{
+
+	
 	private JFrame frame;
 	private JTextField amountobeDeposited;
+
+	
 	/**
 	 * Launch the application.
 	 */
@@ -32,6 +35,7 @@ public class Deposit extends CheckBalance
 			}
 		});
 	}
+
 	/**
 	 * Create the application.
 	 */
@@ -50,6 +54,8 @@ public class Deposit extends CheckBalance
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
+		
+		
 		
 		amountobeDeposited = new JTextField();
 		amountobeDeposited.setColumns(10);
@@ -87,12 +93,14 @@ public class Deposit extends CheckBalance
 				{
 					amountobeDeposited.setText(previous+"1");
 				}
+				
 				else
 				{
 					amountobeDeposited.setText("1");
 				}
 			}
 		});
+		
 				JButton button4 = new JButton("4");
 				button4.setFont(new Font("Dialog", Font.BOLD, 21));
 				button4.addActionListener(new ActionListener() {
@@ -126,6 +134,7 @@ public class Deposit extends CheckBalance
 				{
 					amountobeDeposited.setText(previous+"2");
 				}
+				
 				else
 				{
 					amountobeDeposited.setText("2");
@@ -167,6 +176,7 @@ public class Deposit extends CheckBalance
 				{
 					amountobeDeposited.setText(previous+"8");
 				}
+				
 				else
 				{
 					amountobeDeposited.setText("8");
@@ -186,6 +196,7 @@ public class Deposit extends CheckBalance
 				{
 					amountobeDeposited.setText(previous+"3");
 				}
+				
 				else
 				{
 					amountobeDeposited.setText("3");
@@ -205,6 +216,7 @@ public class Deposit extends CheckBalance
 				{
 					amountobeDeposited.setText(previous+"6");
 				}
+				
 				else
 				{
 					amountobeDeposited.setText("6");
@@ -244,6 +256,7 @@ public class Deposit extends CheckBalance
 				{
 					amountobeDeposited.setText(previous+"0");
 				}
+				
 				else
 				{
 					amountobeDeposited.setText("0");
@@ -286,19 +299,39 @@ public class Deposit extends CheckBalance
 		{
 			public void actionPerformed(ActionEvent e) 
 			{
-
-				JOptionPane.showMessageDialog(null, "$ "+amountobeDeposited.getText()+" Deposited" ,"Deposit Successful!" , JOptionPane.INFORMATION_MESSAGE);
-				frame.getContentPane().remove(avBalanceLabel2);
+				boolean result =true;				
 				String amount = amountobeDeposited.getText();
+				char [] amountinCharArray = amount.toCharArray();
+				
+				for(char c:amountinCharArray )
+				{
+					if(Character.isDigit(c)==false)
+					{
+						result=false;
+						break;
+					}
+				}
+				
+				if(result==true)
+				{
+					
 				double amo = Double.valueOf(amount);
 				balance = amo + balance;
 				String newBal = String.valueOf(balance);				
 				avBalanceLabel2.setText(newBal);
 				
+				JOptionPane.showMessageDialog(null, "$ "+amountobeDeposited.getText()+" Deposited" ,"Deposit Successful!" , JOptionPane.INFORMATION_MESSAGE);
+				frame.getContentPane().remove(avBalanceLabel2);
+				
 				frame.getContentPane().add(avBalanceLabel2);
 				frame.revalidate();								
 				frame.repaint();
-				
+				}
+				else
+				{
+					JOptionPane.showMessageDialog(null, "Please enter numbers from given keypad or computer keyboard", "Invalid Input!", JOptionPane.ERROR_MESSAGE);
+					amountobeDeposited.setText(null);
+				}	
 			}
 		});
 		enterButton.setBounds(393, 604, 46, 45);
@@ -320,7 +353,7 @@ public class Deposit extends CheckBalance
 				}
 				else
 				{
-					amountobeDeposited.setText(afterOp.substring(0, oneStepback-1));
+					amountobeDeposited.setText(	afterOp.substring(0, oneStepback-1));
 				}
 				
 				
