@@ -1,4 +1,4 @@
- Built an Automated Teller Machine application using JFrame and Swing in java which can: 
+ > Built an Automated Teller Machine application using JFrame and Swing in java which can: 
 
  1.Allow a user to select from the service screen to make a  choice between the available services.
  
