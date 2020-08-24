@@ -12,5 +12,5 @@
 > Instructions to use Application
 
  1. The pin of the account is 1234 which can be changed from PinScreen.java file line 320.
- 2. Customer information is entered randomly which can be changed using the ...... files
+ 2. Customer information is entered randomly which can be changed by using the labels int the CheckBalance.java, Deposit.java, ReceiptScreen.java, ServicesScreen.java, WithDraw.java files.
  3. Only numbers should be entered using the number keypad provided on the frame wherever necessary, a pop-up dialog box will appear which tells user to enter only     numbers from given keypad or computer keyboard.
