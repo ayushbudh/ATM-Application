@@ -3,9 +3,11 @@
  1.Allow a user to select from the service screen to make a  choice between the available services.
  
  2.Check the remaining balance in the account 
+ 
  3.Withdraw amount if the withdrawal amount is less
    than the available balance in the account.
  4.Deposit inputted amount by the user.
+ 
  5.Generate the most recent receipt after the
    transaction with the date and time of printing that particular  
    receipt.
