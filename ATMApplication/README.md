@@ -6,7 +6,7 @@
  
  3. Withdraw amount if the withdrawal amount is less
     than the available balance in the account.
- 4. Deposit inputted amount by the user.
+ 4. Deposit input amount by the user.
  
  5. Generate the most recent receipt after the
     transaction with the date and time of printing that particular  
