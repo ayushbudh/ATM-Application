@@ -22,4 +22,4 @@
 
 <img src="screenshots/ScreenShot1.png" width="200">
 
-![](screenshots/ScreenShot1.png =100x20) 
+
