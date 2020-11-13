@@ -19,7 +19,10 @@
  2. Customer information is entered randomly which can be changed by using the labels in the CheckBalance.java, Deposit.java, ReceiptScreen.java, ServicesScreen.java, WithDraw.java files.
  
  3. Only numbers should be entered using the number keypad provided on the frame wherever necessary, a pop-up dialog box will appear which tells user to enter only     numbers from given keypad or computer keyboard.
-
+ 
+ 
+<br>
+<h1> ScreenShots of the Running Application </h1>
 <img src="screenshots/ScreenShot1.png" width="400px" >
 <img src="screenshots/ScreenShot2.png" width="400px">
 <img src="screenshots/ScreenShot3.png" width="400px">
