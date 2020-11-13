@@ -20,6 +20,6 @@
  
  3. Only numbers should be entered using the number keypad provided on the frame wherever necessary, a pop-up dialog box will appear which tells user to enter only     numbers from given keypad or computer keyboard.
 
-<img src="screenshots/ScreenShot1.png" width="200">
+<img src="screenshots/ScreenShot1.png" width="400px">
 
 
