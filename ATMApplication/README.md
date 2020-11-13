@@ -24,12 +24,11 @@
 <img src="screenshots/ScreenShot2.png" width="400px">
 <img src="screenshots/ScreenShot3.png" width="400px">
 
-<style>
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
- </style>
+ 
 
