@@ -23,9 +23,15 @@
  
 
 <h1> Application Demo </h1>
-<span><img src="screenshots/ScreenShot1.png" width="380px" ></span>
-<span><img src="screenshots/ScreenShot2.png" width="400px"></span>
-<span><img src="screenshots/ScreenShot3.png" width="400px"></span>
+<span style="padding:5px"><img
+            src="screenshots/ScreenShot1.png"
+            width="308px" height="360px"></span>
+    <span style="padding:5px"><img
+            src="screenshots/ScreenShot2.png"
+            width="308px" height="360px"></span>
+    <span style="padding:5px"><img
+            src="screenshots/ScreenShot3.png"
+            width="308px" height="360px"></span>
 
 
  
