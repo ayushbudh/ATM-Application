@@ -21,11 +21,11 @@
  3. Only numbers should be entered using the number keypad provided on the frame wherever necessary, a pop-up dialog box will appear which tells user to enter only     numbers from given keypad or computer keyboard.
  
  
-<br>
-<h1> ScreenShots of the Running Application </h1>
-<img src="screenshots/ScreenShot1.png" width="400px" >
-<img src="screenshots/ScreenShot2.png" width="400px">
-<img src="screenshots/ScreenShot3.png" width="400px">
+
+<h1> Application Demo </h1>
+<span><img src="screenshots/ScreenShot1.png" width="380px" ></span>
+<span><img src="screenshots/ScreenShot2.png" width="400px"></span>
+<span><img src="screenshots/ScreenShot3.png" width="400px"></span>
 
 
  
